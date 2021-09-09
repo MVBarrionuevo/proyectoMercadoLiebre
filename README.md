@@ -1,3 +1,4 @@
 **Práctica Integradora para Digital House:**
-  -Objetivo:
-    - Maquetar un sitio web de principio a fin.
+-Objetivos:
+    - Crear la estructura de un sitio web mediante HTML.
+    - Darle estilo con CSS.
