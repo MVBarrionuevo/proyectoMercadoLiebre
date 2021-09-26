@@ -36,6 +36,7 @@ header {
 
 .logo {
   width: 50%;
+  padding-right: 10px;
 }
 
 .search-form {
@@ -44,13 +45,33 @@ header {
   align-items: center;
 }
 
+.top-header button.search-button,
+.top-header input[type='text'] {
+  background-color: white;
+  color: #666;
+  border: none;
+  cursor: pointer;
+}
+
+.top-header button.search-button {
+  width: 20%;
+  border-radius: 0px 5px 5px 0px;
+  height: 41px;
+}
+
+.top-header input[type='text'] {
+  padding: 14px;
+  border-radius: 5px 0px 0px 5px;
+}
+
 .burger-menu {
   background-color: #1259c3;
   color: white;
   display: block;
-  max-width: 50px;
-  padding: 15px 0;
-  border-radius: 8px;
+  max-width: 40px;
+  height: 40px;
+  padding: 10px 0;
+  border-radius: 5px;
   text-align: center;
   font-size: 18px;
   margin: auto;
@@ -59,6 +80,8 @@ header {
 header h2 {
   text-align: center;
   font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 25px;
 }
 
 .main-navbar {
@@ -76,7 +99,7 @@ header h2 {
   color: black;
   display: inline-block;
   padding: 5px 0;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .banner-img {
@@ -87,6 +110,7 @@ main {
   width: 90%;
   text-align: center;
   margin: auto;
+  padding-bottom: 30px;
 }
 
 .main-products {
@@ -100,6 +124,8 @@ main {
 .ofers-section h5 {
   font-size: 24px;
   color: #666;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .products {
@@ -110,8 +136,7 @@ main {
 }
 
 .products img {
-  height: 300px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .price {
@@ -154,7 +179,9 @@ main {
   display: flex;
   align-items: center;
 }
+
 .product-box {
+  width: 100%;
   border-top: solid 1px #ebebeb;
   padding: 15px;
   position: relative;
@@ -164,6 +191,7 @@ main {
 footer {
   background-color: white;
   color: #666;
+  padding-top: 20px;
 }
 
 .footer-info {
@@ -188,6 +216,12 @@ footer {
   font-size: 2em;
   margin: 10px;
   color: #1259c3;
+}
+
+.bottom-footer {
+  margin: 0;
+  text-align: center;
+  padding: 20px 0px;
 }
 
 input[type='text'],
@@ -231,8 +265,20 @@ button[type='reset'] {
 }
 
 @media (min-width: 361px) {
+  .products {
+    width: 40%;
+  }
+
   .products:hover {
     box-shadow: 0px 0px 10px rgb(100 100 100);
+  }
+
+  .price {
+    padding-right: 5px;
+  }
+
+  header h2 {
+    font-size: 16px;
   }
 }
 
@@ -240,6 +286,7 @@ button[type='reset'] {
   .main-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   header h2 {
@@ -258,10 +305,15 @@ button[type='reset'] {
 
   .main-navbar ul {
     display: flex;
+    margin-top: 30px;
   }
 
   .main-navbar li {
     margin: 0 5px;
+  }
+
+  .products {
+    width: 22%;
   }
 
   .description {
