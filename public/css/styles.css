@@ -261,7 +261,7 @@ button {
   width: 100%;
   border: none;
   border-radius: 5px;
-  background-color: #1259c3;
+  background-color: #1259c3c2;
   color: white;
   padding: 14px;
   margin: 15px 0;
@@ -270,6 +270,11 @@ button {
 
 button[type='reset'] {
   background-color: #39b54a;
+  transition: background-color 0.5s;
+}
+
+button[type='reset']:hover{
+  background-color:#31953e; 
 }
 
 .tittle-input.date {
