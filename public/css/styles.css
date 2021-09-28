@@ -273,8 +273,8 @@ button[type='reset'] {
   transition: background-color 0.5s;
 }
 
-button[type='reset']:hover{
-  background-color:#31953e; 
+button[type='reset']:hover {
+  background-color: #31953e;
 }
 
 .tittle-input.date {
@@ -307,10 +307,6 @@ button[type='reset']:hover{
 @media (min-width: 361px) {
   header h2 {
     font-size: 16px;
-  }
-
-  .products {
-    width: 40%;
   }
 
   .products:hover {
@@ -353,7 +349,7 @@ button[type='reset']:hover{
   }
 
   .products {
-    width: 22%;
+    width: 45%;
   }
 
   .description {
@@ -459,5 +455,9 @@ button[type='reset']:hover{
 
   .main-navbar a {
     font-size: 18px;
+  }
+
+  .products {
+    width: 22%;
   }
 }
