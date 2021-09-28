@@ -17,7 +17,7 @@ rel="stylesheet" />
     <header>
         <div class="main-header">
             <div class="top-header">
-                <img class="logo" src="/images/logo-mercado-liebre.svg">
+                <a href="/" class="logo-header"><img class="logo" src="/images/logo-mercado-liebre.svg"></a>                
                 <form action="#" class="search-form" method="GET">
                     <input type="text" placeholder="Buscar productos, marcas"></input>
                     <button type="submit" class="search-button"><i class="fas fa-search"></i></button>                 
@@ -52,49 +52,65 @@ rel="stylesheet" />
         </nav>            
     </header>
     <main>
-        <form action="/register" method="POST">
+        <form class="register-form"action="/register" method="POST">
             <div>
-                <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                <input type="text" name="name" placeholder="Nombre y apellido" required>
             </div>
             <div>
-                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" required minlength="6" maxlength="12">
+                <input type="text" name="username" placeholder="Nombre de usuario" required minlength="6" maxlength="12">
             </div>
             <div>
-                <input type="email" name="email" placeholder="E-mail">
+                <input type="email" name="email" placeholder="E-mail" required>
             </div>
-            <div  class="tittle-input">
-                <label>Fecha de nacimiento:</label>
+            <div>
+                <div class="tittle-input date">
+                    <label>Fecha de nacimiento:</label>
+                </div>
                 <input type="date" name="date">
             </div>
             <div>
-                <input type="text" name="domicilio" placeholder="Domicilio">
+                <input type="text" name="address" placeholder="Domicilio">
             </div>
-            <div class="tittle-input">
-                <label>Perfil del usuario:</label><br/>
-                <input type="radio" name="usuario" value="Comprador"><label class="text-label">Comprador</label>
-                <input type="radio" name="usuario" value="Vendedor"><label class="text-label">Vendedor</label>
+            <div class="inputs-options">
+                <div class="tittle-input">
+                    <label>Perfil del usuario:</label>
+                </div>
+                
+                <input type="radio" name="user" value="Comprador"><label class="text-label">Comprador</label>
+                <input type="radio" name="user" value="Vendedor"><label class="text-label">Vendedor</label>
             </div>
-            <div class="tittle-input">
-                <label >Intereses</label> <br/>
-                
-                <input type="checkbox" name="intereses" value="electro">
-                <label class="text-label">Electro</label><br/>
-                
-                <input type="checkbox" name="intereses" value="moda">
-                <label class="text-label">Moda</label><br/>
-                
-                <input type="checkbox" name="intereses" value="hogar">
-                <label class="text-label">Hogar</label><br/>
-                
-                <input type="checkbox" name="intereses" value="jugueteria">
-                <label class="text-label">Juguetería</label><br/>
-                
-                <input type="checkbox" name="intereses" value="vidaSana">
-                <label class="text-label">Vida Sana</label>
+            <div class="inputs-options">                
+                <div class="tittle-input">
+                    <label>Intereses: </label>
+                </div>
+                <div class="checkbox-option one">
+                    <input type="checkbox" name="interests" value="electro">
+                    <label class="text-label">Electro</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" name="interests" value="moda">
+                    <label class="text-label">Moda</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" name="interests" value="hogar">
+                    <label class="text-label">Hogar</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" name="interests" value="jugueteria">
+                    <label class="text-label">Juguetería</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" name="interests" value="vidaSana">
+                    <label class="text-label">Vida Sana</label> 
+                </div>             
             </div>
-            <div class="tittle-input">
-                <label>Foto de Usuario</label>
-                <input type="file" name="foto">
+            <div class="inputs-options">
+                <div class="tittle-input">
+                    <label>Foto de Usuario: </label>
+                </div>     
+                <div class="file-input">                        
+                    <input type="file" name="photo">
+                </div> 
             </div>
             <div>
                 <input type="password" name="password" placeholder="Contraseña" minlength="6" maxlength="12" >
@@ -103,13 +119,39 @@ rel="stylesheet" />
                 <input type="password" name="password" placeholder="Repetir contraseña">
             </div>
             <div>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="button-submit">Enviar</button>
             </div>
             <div>
                 <button type="reset">Borrar</button>
             </div>
         </form>
     </main> 
+    <footer>
+        <div class="footer-flex">
+            <section class="footer-info">
+                <i class="fas fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </section>
+            <section class="footer-info">
+                <i class="fas fa-gift"></i>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section class="footer-info">
+                <i class="fas fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+            </section>
+        </div>        
+        <section>
+            <p class="bottom-footer"> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>    
 </body>
 </html>
 

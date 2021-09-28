@@ -1,20 +1,3 @@
-/* 
-Paleta de colores
-Amarillo: #EAC926;
-Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a;
-
-Tamaños Tipográficos
-Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px
-*/
-
 * {
   box-sizing: border-box;
 }
@@ -25,6 +8,11 @@ body {
   background-color: #ebebeb;
 }
 
+.banner-img {
+  width: 100%;
+}
+
+/* #region  ----------- HEADER ----------- */
 header {
   background-color: #eac926;
   padding: 20px;
@@ -32,10 +20,16 @@ header {
 
 .top-header {
   display: flex;
+  align-items: center;
 }
 
-.logo {
+.logo-header {
   width: 50%;
+  cursor: pointer;
+}
+
+.logo-header img {
+  width: 100%;
   padding-right: 10px;
 }
 
@@ -102,9 +96,9 @@ header h2 {
   font-size: 16px;
 }
 
-.banner-img {
-  width: 100%;
-}
+/* #endregion  ----------- HEADER ----------- */
+
+/* #region  ----------- MAIN ----------- */
 
 main {
   width: 90%;
@@ -188,6 +182,9 @@ main {
   text-align: left;
 }
 
+/* #endregion  ----------- MAIN ----------- */
+
+/* #region  ----------- FOOTER ----------- */
 footer {
   background-color: white;
   color: #666;
@@ -216,12 +213,21 @@ footer {
   font-size: 2em;
   margin: 10px;
   color: #1259c3;
+  transition: color 0.5s;
 }
 
 .bottom-footer {
   margin: 0;
   text-align: center;
   padding: 20px 0px;
+}
+
+/* #endregion  ----------- FOOTER ----------- */
+
+/* #region  ----------- REGISTER - LOGIN ----------- */
+.register-form,
+.login-form {
+  margin-top: 30px;
 }
 
 input[type='text'],
@@ -239,10 +245,16 @@ input[type='date'] {
 }
 
 .tittle-input {
-  text-align: left;
   font-weight: bold;
   color: #666;
-  margin: 10px 0px;
+  margin: 15px 0px;
+  width: 100%;
+  text-align: left;
+  padding: 15px 0px;
+}
+
+.inputs-options {
+  text-align: left;
 }
 
 button {
@@ -260,11 +272,38 @@ button[type='reset'] {
   background-color: #39b54a;
 }
 
+.tittle-input.date {
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.button-submit {
+  transition: background-color 0.5s;
+}
+
 .button-submit:hover {
   background-color: #0022aa;
 }
 
+.checkbox-option {
+  padding: 10px 0px;
+}
+
+.checkbox-option.one {
+  padding-top: 0px;
+}
+
+.text-label {
+  padding: 10px 5px;
+}
+
+/* #endregion  ----------- REGISTER - LOGIN ----------- */
+
 @media (min-width: 361px) {
+  header h2 {
+    font-size: 16px;
+  }
+
   .products {
     width: 40%;
   }
@@ -275,10 +314,6 @@ button[type='reset'] {
 
   .price {
     padding-right: 5px;
-  }
-
-  header h2 {
-    font-size: 16px;
   }
 }
 
@@ -343,18 +378,19 @@ button[type='reset'] {
     max-height: 70px;
   }
 
+  .product-box {
+    transform: max-height 0.5s;
+  }
+
   .product-icon i {
     transition: transform 0.5s;
   }
   .product-icon i:hover {
     transform: rotate(-90deg);
   }
+
   .description {
     transition: all 0.5s;
-  }
-
-  .product-box {
-    transform: max-height 0.5s;
   }
 
   input[type='text'],
@@ -366,6 +402,29 @@ button[type='reset'] {
 
   button {
     width: 50%;
+  }
+
+  .inputs-options {
+    width: 50%;
+    margin: auto;
+  }
+
+  .tittle-input {
+    width: 50%;
+    text-align: left;
+  }
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-info i:hover {
+    color: #39b54a;
+  }
+
+  .footer-info {
+    padding: 10px;
   }
 }
 

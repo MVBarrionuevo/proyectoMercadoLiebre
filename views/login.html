@@ -17,7 +17,7 @@ rel="stylesheet" />
     <header>
         <div class="main-header">
             <div class="top-header">
-                <img class="logo" src="/images/logo-mercado-liebre.svg">
+                <a href="/" class="logo-header"><img class="logo" src="/images/logo-mercado-liebre.svg"></a>                
                 <form action="#" class="search-form" method="GET">
                     <input type="text" placeholder="Buscar productos, marcas"></input>
                     <button type="submit" class="search-button"><i class="fas fa-search"></i></button>                 
@@ -52,7 +52,7 @@ rel="stylesheet" />
         </nav>            
     </header>
     <main>
-        <form action="/login" method="POST">
+        <form class="login-form" action="/login" method="POST">
             <div>
                 <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" required>
             </div>
@@ -64,5 +64,31 @@ rel="stylesheet" />
             </div>
         </form>
     </main>
+    <footer>
+        <div class="footer-flex">
+            <section class="footer-info">
+                <i class="fas fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </section>
+            <section class="footer-info">
+                <i class="fas fa-gift"></i>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section class="footer-info">
+                <i class="fas fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+            </section>
+        </div>        
+        <section>
+            <p class="bottom-footer"> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>    
 </body>
 </html>
