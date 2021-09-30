@@ -51,11 +51,14 @@ header {
   width: 20%;
   border-radius: 0px 5px 5px 0px;
   height: 41px;
+  padding: 10px;
+  border: 2px solid white;
 }
 
 .top-header input[type='text'] {
-  padding: 14px;
+  padding: 10px;
   border-radius: 5px 0px 0px 5px;
+  height: 41px;
 }
 
 .burger-menu {
